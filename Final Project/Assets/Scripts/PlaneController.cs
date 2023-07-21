@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEditorInternal.VersionControl;
 using UnityEngine;
 using UnityEngine.Networking.Types;
+using TMPro;
+using UnityEngine.UIElements;
 
 public class PlaneController : MonoBehaviour
 {
@@ -27,7 +29,7 @@ public class PlaneController : MonoBehaviour
     }
 
     Rigidbody rb;
-
+    [SerializeField] TextMeshProUGUI hud;
     private void Awake() {
         rb = GetComponent<Rigidbody>();
     }
@@ -48,7 +50,7 @@ public class PlaneController : MonoBehaviour
     private void Update()
     {
         HandleInputs();
-
+        UpdateHUD();
     }
 
     private void FixedUpdate()
@@ -59,4 +61,11 @@ public class PlaneController : MonoBehaviour
         rb.AddTorque(transform.right * pitch * responseModifier);
         rb.AddTorque(-transform.forward * roll * responseModifier);
     }
+    private void UpdateHUD()
+    {
+        hud.text = "Throttle " + throttle.ToString("F0") + "%\n";
+        hud.text += "AirSpeed: " + (rb.velocity.magnitude * 3.6f).ToString("F0") + "km/h\n";
+        hud.text += "Altitude: " + transform.position.y.ToString("F0") + " m";
+    }
+    
 }
