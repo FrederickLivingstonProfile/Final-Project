@@ -1,13 +1,12 @@
 ﻿<Properties StartupConfiguration="{4ABD25F2-7453-1E14-1C63-BCE00338D1E5}|">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/RingController.cs">
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="0cc6b32f-c0b7-4cab-89e3-9eefe99125ae" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CollisonTest.cs">
     <Files>
-      <File FileName="Assets/Scripts/PlaneController.cs" Line="70" Column="5" />
-      <File FileName="Assets/Scripts/CameraController.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/EnemyPlaneMovement.cs" Line="30" Column="6" />
-      <File FileName="Assets/Scripts/RingController.cs" Line="25" Column="5" />
+      <File FileName="Assets/Scripts/PlaneController.cs" Line="49" Column="6" />
+      <File FileName="Assets/Scripts/CameraController.cs" />
+      <File FileName="Assets/Scripts/Patrolling.cs" />
+      <File FileName="Assets/Scripts/MoveFoward.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/CollisonTest.cs" Line="13" Column="12" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -22,8 +21,10 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="95abb444-aa25-4e11-9797-bd80bea1e469" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

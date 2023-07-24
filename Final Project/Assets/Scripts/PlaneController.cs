@@ -15,6 +15,7 @@ public class PlaneController : MonoBehaviour
     public float maxThrottle = 200f;
     [Tooltip("How responsive  the plane is when rolling, pitching, and yawing")]
     public float responsiveness = 10f;
+    public GameObject projectilePrefab;
 
     private float throttle;
     private float roll;
@@ -43,7 +44,7 @@ public class PlaneController : MonoBehaviour
 
         // Handle throttle value being sure to clamp it between 0 and 100.
         if (Input.GetKey(KeyCode.Space)) throttle += throttleIncrement;
-        else if (Input.GetKey(KeyCode.LeftControl)) throttle -= throttleIncrement;
+        else if (Input.GetKey(KeyCode.LeftCommand)) throttle -= throttleIncrement;
         throttle = Mathf.Clamp(throttle, 0f, 100f);
     }
 
@@ -51,6 +52,10 @@ public class PlaneController : MonoBehaviour
     {
         HandleInputs();
         UpdateHUD();
+        if (Input.GetKeyDown(KeyCode.LeftCommand))
+        {
+            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+        }
     }
 
     private void FixedUpdate()
