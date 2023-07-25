@@ -60,6 +60,10 @@
     <Compile Include="Assets/Scripts/Patrolling.cs" />
     <Compile Include="Assets/Scripts/CameraController.cs" />
     <Compile Include="Assets/Scripts/MoveFoward.cs" />
+    <Compile Include="Assets/Scripts/BgScript.cs" />
+    <Compile Include="Assets/MainMenu.cs" />
+    <Compile Include="Assets/Button.cs" />
+    <Compile Include="Assets/PauseMenu.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
